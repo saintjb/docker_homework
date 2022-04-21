@@ -5,7 +5,7 @@ docker network create -d bridge --subnet 192.168.5.0/24 --ip-range 192.168.5.0/2
 ```
 ## Run PostgreSQL container
 ```
-docker run -d --name db  --net djangontw --ip 192.168.5.3 -e POSTGRES_USER=django -e POSTGRES_DB=django -e POSTGRES_PASSWORD=django postgres:14.2-alpine
+docker run -d --name database  --net djangontw --ip 192.168.5.3 -e POSTGRES_USER=django -e POSTGRES_DB=django -e POSTGRES_PASSWORD=django postgres:14.2-alpine
 ```
 ## Build an image
 ```
